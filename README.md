@@ -14,7 +14,6 @@ And checking if the following input is shown:
 Initialized the DWASD data pack, version X.Y.Z
 - No player tags have been removed
 - Pack scoreboards have been reset
-- You can subscribe players to WASD detection by adding the dwasd.subject tag to them
 - [Click here] to disable seeing this message upon subsequent reloads
 ```
 
