@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 10,
-        "description": "Algorithm for WASD detection"
+        "description": "The distance-based WASD detector, version 0.1.0"
     }
 }
