@@ -6,8 +6,8 @@ It improves upon other methods of WASD detection by using no entities[^3], being
 In order to get started, just download this repository and place the resulting folder (which should be named "dwasd") in your respective world's "datapacks" folder.
 
 You can verify the installation succeeded by running the following command:
-```
-/reload
+```mcfunction
+reload
 ```
 And checking if the following input is shown:
 ```
@@ -30,11 +30,11 @@ These tags are:
 ## Examples
 Subscribe a player:
 ```mcfunction
-/tag miestrode add dwasd.subject
+tag miestrode add dwasd.subject
 ```
 Unsubscribe a player:
 ```mcfunction
-/tag miestrode remove dwasd.subject
+tag miestrode remove dwasd.subject
 ```
 Check system output (Ideally done in a datapack):
 ```mcfunction
