@@ -1,6 +1,6 @@
 # DWASD: The Distance-based WASD detector
-DWASD is a Minecraft data pack that enables WASD input detection. In other words, it attempts[^1] to detect "movement"[^2] inputs, independent of rotation.
-It improves upon other methods of WASD detection by using no entities[^3], being very lightweight and not using many complicated scoreboard operations.
+DWASD is a Minecraft data pack that enables rotation-resilient, efficient local movement detection. In other words, it attempts[^1] WASD input.
+It improves upon other methods of local input detection by using no entities[^2], being very lightweight and not using many complicated scoreboard operations.
 
 ## Getting started
 In order to get started, just download this repository and place the resulting folder (which should be named "dwasd") in your respective world's "datapacks" folder.
@@ -18,26 +18,26 @@ Initialized the DWASD data pack, version X.Y.Z
 ```
 
 ### Subscribing a player
-As shown in the input, you may add the `dwasd.subject` tag to a player in order to subscribe him to the detection system. At each tick, the system will give that player a list of tags which represent the output the of system.
+As shown in the input, you may add the `dwasd.subbed` tag to a player in order to subscribe him to the detection system. At each tick, the system will give that player a list of tags which represent the output the of system.
 
 These tags are:
-- `dwasd.w` - Forwards movement detected
-- `dwasd.a` - Leftwards movement detected
-- `dwasd.s` - Backwards movement detected
-- `dwasd.d` - Rightwards movement detected
+- `dwasd.fwd` - Forwards movement detected
+- `dwasd.lwd` - Leftwards movement detected
+- `dwasd.bwd` - Backwards movement detected
+- `dwasd.rwd` - Rightwards movement detected
 
 ## Examples
 Subscribe a player:
 ```mcfunction
-tag miestrode add dwasd.subject
+tag miestrode add dwasd.subbed
 ```
 Unsubscribe a player:
 ```mcfunction
-tag miestrode remove dwasd.subject
+tag miestrode remove dwasd.subbed
 ```
 Check system output (Ideally done in a datapack):
 ```mcfunction
-execute if entity miestrode[tag=dwasd.w] run say Miestrode moved forwards!
+execute if entity miestrode[tag=dwasd.fwd] run say Miestrode moved forwards!
 ```
 
 ## Q & A
@@ -66,5 +66,4 @@ I require only two things:
 You may contact me if you must break these criteria.
 
 [^1]: This procedure is of course not perfect as movement only gives so much data.
-[^2]: Or actual presses, if the player is mounted.
-[^3]: Except the players it is acting on, of course.
+[^2]: Except the players it is acting on, of course.

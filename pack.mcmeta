@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 10,
-        "description": "The distance-based WASD detector, version 0.1.0"
+        "description": "The distance-based WASD detector, version 0.1.3"
     }
 }

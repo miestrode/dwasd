@@ -1,4 +1,2 @@
-execute positioned ^ ^ ^-6 if entity @s[distance=..5.5] run tag @s add dwasd.w
-execute positioned ^-6 ^ ^ if entity @s[distance=..5.5] run tag @s add dwasd.a
-execute positioned ^ ^ ^6 if entity @s[distance=..5.5] run tag @s add dwasd.s
-execute positioned ^6 ^ ^ if entity @s[distance=..5.5] run tag @s add dwasd.d
+execute if entity @s[predicate=dwasd:mounted] run function dwasd:detect_mot
+execute unless entity @s[predicate=dwasd:mounted] run function dwasd:detect_pos
