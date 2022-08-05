@@ -1,6 +1,6 @@
 # DWASD: The Distance-based WASD detector
 DWASD is a Minecraft data pack that enables rotation-resilient, efficient local movement detection. In other words, it attempts[^1] WASD input.
-It improves upon other methods of local input detection by using no entities[^2], being very lightweight and not using many complicated scoreboard operations.
+It improves upon some methods of local input detection by using no entities[^2], being very lightweight and not using many complicated scoreboard operations.
 
 ## Getting started
 In order to get started, just download this repository and place the resulting folder (which should be named "dwasd") in your respective world's "datapacks" folder.
