@@ -55,8 +55,8 @@ In essence, the following steps are taken:
    1. Get the player's position delta/motion based on a predicate
    2. Use a function tree based relative coordinate preperation system based on capping the vector.
    3. Use the relative coordinates to execute the next step
-2. Spawn out four markers from the position, using local coordinates and the `execute positioned` subcommand.
-3. Use the `distance` selector to find the closest markers and apply tags accordingly.
+2. Execute four commands with local coordinates using the `execute positioned` subcommand.
+3. Use the `distance` selector to find the closest execution spots (of these commands) and apply tags accordingly.
 
 ### I would like to use this data pack in my creation/video/multimedia project, what do I do?
 I require only two things:
