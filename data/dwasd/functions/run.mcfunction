@@ -1,4 +1,7 @@
-execute if entity @s[predicate=dwasd:mounted] run function dwasd:get_motion
-execute unless entity @s[predicate=dwasd:mounted] run function dwasd:get_pos_diff
+tag @s remove dwasd.fwd
+tag @s remove dwasd.lwd
+tag @s remove dwasd.bwd
+tag @s remove dwasd.rwd
 
-function dwasd:position_x/start
+execute if predicate dwasd:mounted run function dwasd:run_mounted
+execute unless predicate dwasd:mounted run function dwasd:run_unmounted
